@@ -1,0 +1,274 @@
+[{
+	"authors": [
+		"Bob Budiansky",
+		"Bret Blevins"
+	],
+	"genres": "Fictional",
+	"description": "8-Ball is the name used by different characters from Marvel Comics.",
+	"images": {
+		"thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/8-Ball_%28comics%29_sleepwalker_cover.jpg/250px-8-Ball_%28comics%29_sleepwalker_cover.jpg"
+	},
+	"isHero": null,
+	"isVillain": true,
+	"mainColor": null,
+	"name": "8",
+	"partners": [],
+	"powers": [
+		"Brilliant engineer",
+		"Skilled gymnast",
+		"Expert pool player",
+		"Gifted inventor",
+		"A cue stick",
+		"Use of explosive grenades",
+		"Fireworks",
+		"Flying miniature cameras"
+	],
+	"ranking": {
+		"userRank": 0,
+		"pageRank": 0
+	},
+	"secretIdentities": [
+		"Jeff Hagees"
+	],
+	"species": [],
+	"teams": [
+		"8-Ball Gang"
+	],
+	"urls": {
+		"wikipedia": "https://en.wikipedia.org/wiki/8-Ball_(comics)"
+	}
+}, {
+	"authors": [
+		"Stan Lee",
+		"Gil Kane"
+	],
+	"genres": "Superhero",
+	"description": "Formerly known as Emil Blonsky, a spy of Soviet Yugoslavian origin working for the KGB, the Abomination gained his powers after receiving a dose of gamma radiation similar to that which transformed Bruce Banner into the incredible Hulk.",
+	"images": {
+		"background": null,
+		"banner": null,
+		"thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04/standard_xlarge.jpg"
+	},
+	"isHero": null,
+	"isVillain": true,
+	"mainColor": null,
+	"name": "Abomination (Emil Blonsky)",
+	"partners": [
+		"Rhino",
+		"Leader",
+		"The Leader"
+	],
+	"powers": [
+		"Superhuman strength",
+		"Speed",
+		"Stamina",
+		"Durability",
+		"Hellfire projection",
+		"Regenerative",
+		"Healing factor"
+	],
+	"ranking": {
+		"userRank": 43,
+		"pageRank": 2
+	},
+	"secretIdentities": [
+		"Emil Blonsky"
+	],
+	"species": [
+		"Mutate"
+	],
+	"teams": [
+		"Masters of Evil",
+		"Legion Accursed",
+		"KGB"
+	],
+	"urls": {
+		"marvel": "http://marvel.com/characters/81/abomination",
+		"wikipedia": "https://en.wikipedia.org/wiki/Abomination_(comics)"
+	}
+}, {
+	"authors": [
+		"Dale Keown",
+		"Peter David"
+	],
+	"genres": "Fictional",
+	"description": "Agamemnon is a fictional character in Marvel Comics.",
+	"images": {
+		"thumbnail": "https://upload.wikimedia.org/wikipedia/en/1/18/AgamemnonC.jpg"
+	},
+	"isHero": null,
+	"isVillain": null,
+	"mainColor": null,
+	"name": "Agamemnon",
+	"partners": [],
+	"powers": [
+		"Skilled magician",
+		"Spell caster",
+		"Genius analyzer",
+		"Master battle strategist",
+		"Immortality"
+	],
+	"ranking": {
+		"userRank": 0,
+		"pageRank": 0
+	},
+	"secretIdentities": [],
+	"species": [],
+	"teams": [
+		"Pantheon"
+	],
+	"urls": {
+		"wikipedia": "https://en.wikipedia.org/wiki/Agamemnon_(comics)"
+	}
+}, {
+	"authors": [
+		"Whilce Portacio",
+		"Jim Lee"
+	],
+	"genres": "Superhero",
+	"description": "Bishop (Lucas Bishop) is a fictional comic book superhero, appearing in books published by Marvel Comics, in particular the X-Men family of books.Bishop was a member of Xavier's Security Enforcers (initially called the Xavier School Enforcers), a mutant police force from a dystopian future of the Marvel Universe.",
+	"images": {
+		"background": null,
+		"banner": null,
+		"thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/52602f4b42d98/standard_xlarge.jpg"
+	},
+	"isHero": null,
+	"isVillain": null,
+	"mainColor": null,
+	"name": "Bishop",
+	"partners": [],
+	"powers": [
+		"Energy absorption",
+		"Redirection"
+	],
+	"ranking": {
+		"userRank": 240,
+		"pageRank": 8
+	},
+	"secretIdentities": [
+		"Lucas Bishop",
+		"Luke"
+	],
+	"species": [
+		"Mutant"
+	],
+	"teams": [
+		"X-Men",
+		"Xavier's Security Enforcers",
+		"Interpol",
+		"The Twelve",
+		"X-Treme Sanctions Executive",
+		"NYPD",
+		"X-Treme X-Men"
+	],
+	"urls": {
+		"marvel": "http://marvel.com/comics/characters/1009182/bishop",
+		"wikipedia": "https://en.wikipedia.org/wiki/Bishop_(comics)"
+	}
+}, {
+	"authors": [
+		"Don Heck",
+		"Stan Lee"
+	],
+	"genres": "Supervillain",
+	"description": "The Collector (Taneleer Tivan) is a fictional comic book character, a supervillain that has appeared in books published by Marvel Comics.",
+	"images": {
+		"thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Avengers_119.jpg/250px-Avengers_119.jpg"
+	},
+	"isHero": null,
+	"isVillain": null,
+	"mainColor": null,
+	"name": "Collector",
+	"partners": [],
+	"powers": [
+		"Limited shape-shifting",
+		"Effective immortality",
+		"Precognition",
+		"Telepathy",
+		"Armored suit",
+		"Power primordial"
+	],
+	"ranking": {
+		"userRank": 0,
+		"pageRank": 0
+	},
+	"secretIdentities": [
+		"Taneleer Tivan"
+	],
+	"species": [],
+	"teams": [
+		"Elders of the Universe"
+	],
+	"urls": {
+		"wikipedia": "https://en.wikipedia.org/wiki/Collector_(comics)"
+	}
+}, {
+	"authors": [
+		"Roy Thomas",
+		"Mike Ploog",
+		"Gary Friedrich"
+	],
+	"genres": "Supernatural",
+	"description": "Ghost Rider is the name of several fictional supernatural antiheroes appearing in comic books published by Marvel Comics.",
+	"images": {
+		"background": null,
+		"banner": null,
+		"thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/c/50/535feaa671cc6/standard_xlarge.jpg"
+	},
+	"isHero": null,
+	"isVillain": null,
+	"mainColor": null,
+	"name": "Ghost Rider (Daniel Ketch)",
+	"partners": [],
+	"powers": [
+		"Superhuman strength",
+		"Stamina",
+		"Agility",
+		"Reflexes",
+		"Endurance",
+		"Durability",
+		"Penance stare",
+		"Resurrection",
+		"Immortality",
+		"Ethereal flame",
+		"Along any surface",
+		"Regeneration",
+		"Enchanted hellfire chain",
+		"Invulnerability to fire",
+		"Heat",
+		"Lava",
+		"Flames",
+		"Motorcycle",
+		"Shotgun"
+	],
+	"ranking": {
+		"userRank": 13,
+		"pageRank": 2
+	},
+	"secretIdentities": [
+		"Alejandra",
+		"Ghost Rider",
+		"Phantom Rider",
+		"Carter Slade",
+		"Johnny Blaze",
+		"Danny Ketch",
+		"Robbie Reyes"
+	],
+	"species": [],
+	"teams": [
+		"Ghost Riders",
+		"The New Fantastic Four",
+		"The Defenders",
+		"The New Avengers",
+		"The Dark Avengers",
+		"The Champions of Los Angeles",
+		"New Fantastic Four",
+		"New Avengers",
+		"Dark Avengers",
+		"Champions of Los Angeles"
+	],
+	"urls": {
+		"marvel": "http://marvel.com/comics/characters/1010925/ghost_rider_daniel_ketch",
+		"wikipedia": "https://en.wikipedia.org/wiki/Ghost_Rider_(comics)"
+	}
+}]

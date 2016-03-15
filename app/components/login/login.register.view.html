@@ -1,0 +1,29 @@
+<div class="container" ng-controller="LoginCtrl">
+            <form class="form-horizontal" role="form" name="registerForm" novalidate>
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="userName" class="col-sm-3 control-label">User Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="user.username" name="username" placeholder="User Name" class="form-control" ng-pattern="/^[a-zA-Z0-9]+$/" ng-trim="false" autofocus required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" ng-model="user.email" placeholder="Email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="text" ng-model="user.pass" name="pass" placeholder="Password" class="form-control" ng-pattern="/^[a-zA-Z0-9]{7,}$/" ng-trim="false" required>
+                    </div>
+                </div>
+                <span class="error" ng-show="registerForm.$invalid">Minimun 7 characters for pass, and both without spacial characters!</span>
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" ng-disabled="registerForm.$invalid" class="btn btn-primary btn-block" ng-click="doRegister(user)">Register</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->

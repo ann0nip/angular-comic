@@ -1,0 +1,12 @@
+ [
+   {
+      "user":"admin",
+      "email":"admin@admin.com",
+      "pass":"admin"
+   },
+   {
+      "user":"pepito",
+      "email":"pepito@pepito.com",
+      "pass":"pepitox"
+   }
+]
