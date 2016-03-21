@@ -1,15 +1,15 @@
 comicsApp.controller('LoginCtrl',[
     '$scope', 
-    '$rootScope',
     '$state',
     '$http', 
     'loginService',
-    function ($scope, $rootScope, $state, $http, loginService) {
+    function ($scope, $state, $http, loginService) {
 
     $scope.user = {};
-    $scope.user.username = '';
+    $scope.user.user = '';
     $scope.user.email = '';
     $scope.user.pass = '';
+    $scope.user.type = 'user'
     $scope.error = false;
 
     if (loginService.getUsers() === undefined) {
@@ -30,7 +30,7 @@ comicsApp.controller('LoginCtrl',[
 
     $scope.doLogin = function(user) {
 
-        loginService.setAuth(loginService.login(user));
+        loginService.setAuth(loginService.login(user), user);
 
         if (loginService.getAuth()) {
             $state.go('home');
@@ -42,5 +42,8 @@ comicsApp.controller('LoginCtrl',[
 
     $scope.doRegister = function(user) {
         loginService.setUsers(user);
+        console.log(user);
+        $scope.user = {};
+        $state.go('login');
     }
 }]);

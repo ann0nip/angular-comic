@@ -1,0 +1,86 @@
+<div class="containerComics" ng-controller="ProfileCtrl">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <img src="assets/img/comic-banner.jpg">
+    </div>
+  </div>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="left hide-on-med-and-down">
+        <span><a ui-sref="home">Home</a></span>
+        <span>|</span>
+        <span ng-click="adminUsers(!manageUsers)" ng-show="username.type === 'admin'">Administrate users</span>
+        <span>|</span>
+        <span ng-click="adminComics(!manageComics)">Comics’ information</span>
+      </div>
+      <div class="right hide-on-med-and-down">
+        <span ng-click="logout()">Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+	<div class="adminUsers" ng-show="manageUsers">
+		<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		  <div class="panel-heading">Users</div>
+
+		  <!-- Table -->
+		  <table class="table">
+		   <thead>
+		      <tr>
+		         <th>#</th>
+		         <th>Name</th>
+		         <th>Email</th>
+		         <th>Action</th>
+		      </tr>
+		   </thead>
+		   <tbody>
+		      <tr ng-repeat="user in users" ng-hide="user.user === 'admin'">
+		         <th></th>
+		         <td>{{user.user}}</td>
+		         <td>{{user.email}}</td>
+		         <td><a class="btn" ng-click="delete(user.user)">Delete User</a></td>
+		      </tr>		      
+		   </tbody>
+		</table>
+		</div>
+	</div>
+	<div class="comicInformation" ng-show="manageComics">
+		Need to be implemented.
+	</div>
+  </div>
+
+  <footer class="page-footer yellow lighten-4">
+    <div class="container">
+      <div class="row">
+          <div class="col l4 s12">
+            <h5>Tabs</h5>
+            <ul>
+              <li><a>Genres</a></li>
+              <li><a>Editions</a></li>
+              <li><a>News</a></li>
+              <li><a>Characters</a></li>          
+            </ul>
+          
+          </div>
+          <div class="col l4 s12">
+            <h5>Options</h5>
+            <ul>
+              <li><a>Popular</a></li>
+              <li><a>Qualifications</a></li>
+              <li><a>Top Searches</a></li>
+              <li><a>Recommended</a></li>          
+            </ul> 
+          </div>
+          <div class="col l4 s12">
+            <p class="title social">&copy; Comic Store 2016</p>
+            <div id="social" class="">
+              <a><img class="small" src="assets/img/Facebook.svg" alt="Facebook Page"></a>
+              <a><img class="small" src="assets/img/Twitter.svg" alt="Twitter Page"></a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

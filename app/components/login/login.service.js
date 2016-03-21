@@ -4,6 +4,10 @@ comicsApp.service('loginService',['$sessionStorage', function($sessionStorage) {
     
     var isAuth = false;
 
+    var setUsername = function(user, type) {
+        $sessionStorage['username'] = {user: user, type: type};
+    }
+    
     this.login = function (user) {
         var check = false;
 
@@ -11,6 +15,7 @@ comicsApp.service('loginService',['$sessionStorage', function($sessionStorage) {
             if (user.email === el.email && user.pass === el.pass)
             {
                 check = true;
+                setUsername(el.user, el.type);
             } 
         });
                 
@@ -38,5 +43,22 @@ comicsApp.service('loginService',['$sessionStorage', function($sessionStorage) {
     this.getAuth = function() {
         return $sessionStorage['isAuth'] || false;
     }
+
+    this.deleteUser = function(user) {
+        users = $sessionStorage['users'];
+        $.each(users, function(ix, value) {
+            if (value.user === user) {
+                users.splice(ix,1);
+            }
+            
+        });
+            console.log(users);
+        $sessionStorage['users'] = users;
+    }
+
+    this.getUsername = function() {
+        return $sessionStorage['username'] || undefined;
+    }
+
 
 }]);

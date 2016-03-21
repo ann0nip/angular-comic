@@ -2,11 +2,14 @@
    {
       "user":"admin",
       "email":"admin@admin.com",
-      "pass":"admin"
+      "pass":"admin",
+      "type": "admin"
    },
    {
       "user":"pepito",
       "email":"pepito@pepito.com",
-      "pass":"pepitox"
+      "pass":"pepitox",
+      "type": "user",
+      "comicsBorrowed": ""
    }
 ]

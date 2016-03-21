@@ -1,0 +1,137 @@
+<div class="containerComics" ng-controller="HomeCtrl">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <img src="assets/img/comic-banner.jpg">
+    </div>
+  </div>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <div class="right hide-on-med-and-down">
+        <span><a ui-sref="profile">My Profile ({{username.user}})</a></span>
+        <span>|</span>
+        <span ng-click="logout()">Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col no-mobile l2">
+          <div class="collection">
+            <a class="collection-item waves-effect waves-purple">Popular</a>
+            <a class="collection-item waves-effect waves-purple" ng-click="sortType = 'ranking.userRank'">Qualifications</a>
+            <a class="collection-item waves-effect waves-purple">Top Searches</a>
+            <a class="collection-item waves-effect waves-purple" ng-click="sortType = 'recommended'">Recommended</a>
+          </div>
+        </div>
+        <div class="col comic-container s12 l10" ng-controller="FilterCtrl">
+          <div class="row">
+            <div class="col tabs-container s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a ng-click="tabSelection('all')" class="active">All</a></li>
+                <li class="tab col s3"><a ng-click="tabSelection('genres')">Genres</a></li>
+                <li class="tab col s3"><a ng-click="tabSelection('edition')">Edition</a></li>
+                <li class="tab col s3"><a>News</a></li>
+                <li class="tab col s3"><a ng-click="tabSelection('character')">Characters</a></li>
+              </ul>
+            </div>
+            <div class="filterBar input-field col s12" ng-show="showSelect">
+              <select ng-model="filter">
+                <option value="" disabled selected>Choose your option</option>
+                <option ng-repeat="item in items" value="{{item}}">{{item}}</option>
+              </select>
+              <input type="text" ng-model="search[filter]" placeholder="Enter your search">
+            </div>
+            <!-- Here will be render the Comics Cards -->
+            <div class="col comic s12">
+              <!-- here start the card.-->
+                <div class="cards" ng-repeat="comic in comics | orderBy:sortType:true | filter: search">
+                  <div class='col card s12'>
+                    <div class='col image s3'>
+                      <figure>
+                        <img src='{{comic.images.thumbnail}}' alt='An awesome picture'>
+                      </figure>
+                    </div>
+                    <div class='col body s9'>
+                      <div class='row'>
+                        <div class='col description s12'>
+                          <p>{{comic.description}}</p>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class='col edition s12 l2'>
+                          <label>Edition: </label>
+                          <div class='chip'>
+                          {{comic.edition}}
+                          </div>
+                        </div>
+                        <div class='col creator s12 l4'>
+                          <label>Creator: </label>
+                         {{comic.authors}}
+                        </div>
+                        <div class='col recomendation s12 l3'>
+                          <label>Recommended: </label>
+                          {{comic.recommended}}
+                        </div>
+                        <div class='col qualification s12 l3'>
+                          <label>Qualification: <label>
+                          {{comic.ranking.userRank}}
+                       </div>
+                     </div>
+                     <div class="row">
+                        <div class='col  s12 l2'>
+                            <label>Rating</label>
+                            <div ng-init="rating = star.rating + 1"></div>
+
+                            <div class="star-rating" star-rating rating-value="rating"
+
+                             data-max="5" on-rating-selected="rateFunction(rating, comic.name)">
+                            </div>
+                        </div>
+                        <div class="col s12 l2 right">
+                          <a class="btn btn-success" ng-class="{disabled: comic.borrow}" ng-click="borrow(comic.name)">Borrow</a>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <footer class="page-footer yellow lighten-4">
+    <div class="container">
+      <div class="row">
+          <div class="col l4 s12">
+            <h5>Tabs</h5>
+            <ul>
+              <li><a>Genres</a></li>
+              <li><a>Editions</a></li>
+              <li><a>News</a></li>
+              <li><a>Characters</a></li>          
+            </ul>
+          
+          </div>
+          <div class="col l4 s12">
+            <h5>Options</h5>
+            <ul>
+              <li><a>Popular</a></li>
+              <li><a>Qualifications</a></li>
+              <li><a>Top Searches</a></li>
+              <li><a>Recommended</a></li>          
+            </ul> 
+          </div>
+          <div class="col l4 s12">
+            <p class="title social">&copy; Comic Store 2016</p>
+            <div id="social" class="">
+              <a><img class="small" src="assets/img/Facebook.svg" alt="Facebook Page"></a>
+              <a><img class="small" src="assets/img/Twitter.svg" alt="Twitter Page"></a>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

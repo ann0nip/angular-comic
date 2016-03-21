@@ -1,0 +1,105 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+	padding-top: 0px;
+}
+select {
+	display: block;
+}
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#index-banner .container img {
+	width: 100%;
+}
+
+#index-banner .container {
+	width: 100%;
+}
+
+img.small {
+	width: 64px;
+	height: 64px;
+	padding: 0 10px;
+}
+
+.title.social {
+	text-align: center;
+}
+
+#social a {
+	display: block;
+}
+
+#social .small {
+	display: block;
+	margin: 0 auto;
+}
+
+.toastBG {
+	background-color: #29B6F6;
+}
+
+.comic-container .comic figure {
+	margin: 0;
+}
+
+.comic-container .comic figure img {
+	width: 100%;
+}
+
+.comic-container .tabs-container {
+	margin-bottom: 10px;
+}
+
+#enterSignOut {
+	margin: -3px;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	.no-mobile {
+		display: none;
+	}
+}
+
+.rating{
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+}
+
+ul.rating {
+  display: inline-block;
+}
+
+.star-rating ul.rating {
+	width: 80px;
+}
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating .filled {
+  color: #21568b;
+}
+
+.cards .description {
+	margin-top: 15px
+}
